@@ -3,8 +3,8 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 
-let date = new Date().toLocaleDateString;
-let time = new Date().toLocaleTimeString;
+let today = new Date().toLocaleDateString();
+let time = new Date().toLocaleTimeString();
 function App() {
   const [count, setCount] = useState(0);
 
@@ -14,7 +14,7 @@ function App() {
         count is {count}
       </button>
       <p>
-        hôm nay là <strong>{date}</strong>
+        hôm nay là <strong>{today}</strong>. Thời gian hiện tại là: {time}
       </p>
     </>
   );

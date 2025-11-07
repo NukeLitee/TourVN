@@ -1,0 +1,27 @@
+{
+  "name": "tourvn",
+  "version": "1.0.0",
+  "description": "…or create a new repository on the command line echo \"# TourVN\" >> README.md git init git add README.md git commit -m \"first commit\" git branch -M main git remote add origin https://github.com/NukeLitee/TourVN.git git push -u origin main …or push an existing repository from the command line git remote add origin https://github.com/NukeLitee/TourVN.git git branch -M main git push -u origin main",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix backend\" \"npm run dev --prefix frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NukeLitee/TourVN.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NukeLitee/TourVN/issues"
+  },
+  "homepage": "https://github.com/NukeLitee/TourVN#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "dependencies": {
+    "prop-type": "^0.0.1"
+  }
+}
