@@ -1,22 +1,13 @@
-// /frontend/src/components/Layout/DefaultLayout.jsx
-// (Giả sử bạn có file index.js trong thư mục Layout để export)
+// src/layout/DefaultLayout.jsx
+import React from "react";
+import Header from "./Header";
 
-import React from 'react';
-import Header from './Header'; // Import Header
-import Footer from './Footer'; // Import Footer
-
-// "children" ở đây chính là <Page /> mà App.jsx đã truyền vào
-function DefaultLayout({ children }) {
-    return (
-        <div className="flex flex-col min-h-screen">
-            <Header />
-            <main className="flex-grow">
-                {/* Đây là nơi Page component (HomePage, RegisterPage) được render */}
-                {children}
-            </main>
-            <Footer />
-        </div>
-    );
-}
+const DefaultLayout = ({ children }) => {
+  return (
+    <div className="min-h-screen flex flex-col">
+      <main className="flex-1">{children}</main>
+    </div>
+  );
+};
 
 export default DefaultLayout;
